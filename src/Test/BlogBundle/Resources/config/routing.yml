@@ -1,0 +1,32 @@
+test_blog_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: TestBlogBundle:Default:index }
+
+test_blog_registerUser:
+    pattern: /register-user/{name}-{age}-{role}
+    defaults: 
+        _controller: TestBlogBundle:Default:registerUser
+        role: user 
+    requirements:
+      age: \d+
+      role: user|admin
+    methods: [GET]
+
+test_blog_simple1:
+    pattern: /simple   
+    defaults:
+        _controller: TestBlogBundle:Default:simple1
+
+test_blog_simple2:
+    pattern: /simple   
+    defaults:
+        _controller: TestBlogBundle:Default:simple2
+
+test_blog_annotations:
+    resource: "@TestBlogBundle/Controller"
+    type: annotation
+    
+#test_blog_aboutPage:
+#    pattern: /about
+#    defaults:  
+#           _controller: TestBlogBundle:Pages:about

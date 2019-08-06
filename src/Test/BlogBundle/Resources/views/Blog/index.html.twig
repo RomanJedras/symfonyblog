@@ -1,0 +1,64 @@
+{% extends "TestBlogBundle::base.html.twig" %}
+
+{% block pageTitle %}{{parent()}} - Strona główna {%endblock%}
+
+
+{% block pageContainer %}
+<div class="jumbotron">
+            <div class="container">
+                <div class="text">
+                    <h1>Być jak Warren Buffett!</h1>
+                    <p>Jest powszechnie uważany za jednego z najlepszych inwestorów na świecie. Warren Buffett, często określany jako "legendarny inwestor", jest głównym akcjonariuszem, przewodniczącym rady nadzorczej oraz prezesem Berkshire Hathaway. Od wielu lat konsekwentnie utrzymuje się na szczytach list najbogatszych ludzi świata.</p>
+                    <p><a class="btn btn-primary btn-lg" href="dziennik.html" role="button">Moja droga na szczyt &raquo;</a></p>
+                </div>
+                <img class="bull" src="{{ asset('bundles/testblog/img/bull.jpg') }}" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+
+                <div class="col-md-4">
+                    <section class="widget">
+                        <h2>GPW</h2>
+                        <p>Giełda Papierów Wartościowych w Warszawie jest spółką akcyjną powołaną przez Skarb Państwa. Zadaniem GPW jest organizacja obrotu instrumentami finansowymi. Giełda zapewnia koncentrację w jednym miejscu i czasie ofert kupujących i sprzedających w celu wyznaczenia kursu i realizacji transakcji. Na stronie notowania giełdowe, indeksy notowań.</p>
+                        <p><a class="btn btn-default" href="http://www.gpw.pl/" role="button">Czytaj więcej &raquo;</a></p>
+                    </section>
+                </div>
+
+                <div class="col-md-4">
+                    <section class="widget">
+                        <h2>Aktualnie oberwuję</h2>
+                        <ul>
+                            <li>ASSECO POLAND</li>
+                            <li>GRUPA AZOTY</li>
+                            <li>CCC</li>
+                            <li>GRUPA LOTOS</li>
+                            <li>NETIA</li>
+                            <li>TAURON POLSKA ENERGIA</li>
+                            <li>POLSKI KONCERN NAFTOWY ORLEN</li>
+                        </ul>
+                        <p><a class="btn btn-default" href="http://www.gpw.pl/lista_spolek" role="button">Wszystkie spółki &raquo;</a></p>
+                    </section>
+                </div>
+
+                <div class="col-md-4">
+                    <section class="widget">
+                        <h2>W portfelu</h2>
+                        <ul>
+                            <li>ABC DATA - 4,30 zł</li>
+                            <li>KOMPUTRONIK - 8,56 zł</li>
+                            <li>AVIA SOLUTIONS GROUP AB - 35,21 zł</li>
+                            <li>ORZEŁ BIAŁY - 12,15 zł</li>
+                            <li>AMREST HOLDINGS SE - 90,35 zł</li>
+                            <li>WESTA ISIC S.A. - 0,60 zł</li>
+                            <li>ENERGA - 17,10 zł</li>
+                        </ul>
+                        <p><a class="btn btn-default" href="dziennik.html" role="button">Pełny dziennik &raquo;</a></p>
+                    </section>
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+{% endblock%}        

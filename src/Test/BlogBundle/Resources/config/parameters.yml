@@ -1,0 +1,2 @@
+parameters:
+    appApiKey: echo Yaml::dump(substr(md5(microtime()),rand(0,26),8),1);
